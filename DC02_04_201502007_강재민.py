@@ -157,7 +157,7 @@ def listen_linux(frame_rate=44100, interval=0.1):
                         rs.append( target & 15)
                     stream = [12] + stream + rs + [20]
                     make_sounds(stream)
-                display(byte_stream)
+                    display(byte_stream)
             except ReedSolomonError as e:
                 pass
                 # print("{}: {}".format(e, byte_stream))
